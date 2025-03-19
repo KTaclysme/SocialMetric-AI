@@ -23,6 +23,22 @@ def get_mysql_connection():
         print(f"Impossible de se connecter à MySQL : {err}")
         return None
 
+def create_table():
+    cnx = get_mysql_connection()
+    if cnx is None:
+        return jsonify({'error': 'Unable to connect to the database'}), 500
+    
+    cur = cnx.cursor()
+    cur.execute('''CREATE TABLE IF NOT EXISTS tweets (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        tweet VARCHAR(255), 
+        positive INT DEFAULT 0, 
+        negative INT DEFAULT 0)''')
+    cnx.commit()
+    cur.close()
+    cnx.close()
+    return jsonify({'message': 'Table created successfully'})
+
 @app.route('/')
 def hello():
     return '<p>Hello World!<p>'
@@ -30,30 +46,17 @@ def hello():
 @app.route('/data', methods=['GET'])
 def get_data():
     cnx = get_mysql_connection()
+    create_table()
     if cnx is None:
         return jsonify({'error': 'Unable to connect to the database'}), 500
 
-    cur = cnx.cursor()
-    cur.execute('''SELECT * FROM msg''')
+    cur = cnx.cursor(dictionary=True)
+    cur.execute('''SELECT * FROM tweets''')
     data = cur.fetchall()
     cur.close()
     cnx.close()
     return jsonify(data)
 
-@app.route('/create_table', methods=['GET'])
-def create_table():
-    cnx = get_mysql_connection()
-    if cnx is None:
-        return jsonify({'error': 'Unable to connect to the database'}), 500
-    
-    cur = cnx.cursor()
-    cur.execute('''CREATE TABLE IF NOT EXISTS msg (
-        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        tweet VARCHAR(255))''')
-    cnx.commit()
-    cur.close()
-    cnx.close()
-    return jsonify({'message': 'Table created successfully'})
 
 @app.route('/data', methods=['POST'])
 def add_data():
@@ -64,7 +67,7 @@ def add_data():
         return jsonify({'error': 'Unable to connect to the database'}), 500
     
     cur = cnx.cursor()
-    cur.execute('''INSERT INTO msg (tweet) VALUES (%s)''', (tweet,))
+    cur.execute('''INSERT INTO tweets (tweet) VALUES (%s)''', (tweet,))
     cnx.commit()
     cur.close()
     cnx.close()
