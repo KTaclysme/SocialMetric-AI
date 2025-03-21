@@ -13,10 +13,10 @@ docker compose up --build
 docker compose down -v
 
 train model:
-docker exec -it tp-final-web-1 python /code/train.py
+docker exec -it _Nom du container_ python /code/train.py
 
 predict model:
-docker exec -it tp-final-web-1 python /code/predict.py
+docker exec -it _Nom du container_ python /code/predict.py
 
 routes:
 localhost:5000
