@@ -1,17 +1,13 @@
-FROM python:3.10-alpine
+FROM python:3.10-slim
 WORKDIR /code
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 
-# Installation des dépendances système nécessaires pour scikit-learn
-RUN apk add --no-cache \
+# Installation minimale des dépendances système nécessaires
+RUN apt-get update && apt-get install -y \
     gcc \
-    musl-dev \
-    linux-headers \
-    build-base \
-    python3-dev
+    && rm -rf /var/lib/apt/lists/*
 
-# Installation des dépendances Python
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
