@@ -31,7 +31,7 @@ def create_table():
     cur = cnx.cursor()
     cur.execute('''CREATE TABLE IF NOT EXISTS tweets (
         id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        tweet VARCHAR(255), 
+        text VARCHAR(255), 
         positive INT DEFAULT 0, 
         negative INT DEFAULT 0)''')
     cnx.commit()
@@ -60,14 +60,14 @@ def get_data():
 
 @app.route('/data', methods=['POST'])
 def add_data():
-    tweet = request.json['tweet']
+    text = request.json['text']
     
     cnx = get_mysql_connection()
     if cnx is None:
         return jsonify({'error': 'Unable to connect to the database'}), 500
     
     cur = cnx.cursor()
-    cur.execute('''INSERT INTO tweets (tweet) VALUES (%s)''', (tweet,))
+    cur.execute('''INSERT INTO tweets (text) VALUES (%s)''', (text,))
     cnx.commit()
     cur.close()
     cnx.close()
