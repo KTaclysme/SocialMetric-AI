@@ -41,7 +41,7 @@ def create_table():
 
 @app.route('/')
 def hello():
-    return '<p>Hello World!<p>'
+    return '<p>Hello World! <br> <a href="http://localhost:5000/data">click here</a> to create a table and show data </p>'
 
 @app.route('/data', methods=['GET'])
 def get_data():
