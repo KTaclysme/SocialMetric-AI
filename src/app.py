@@ -1,3 +1,4 @@
+import json
 from flask import Flask, jsonify, request
 from src.db.mysql import *
 
@@ -24,15 +25,29 @@ def get_data():
 
 @app.route('/data', methods=['POST'])
 def add_data():
-    text = request.json['text']
-    
+    try:
+        with open('data/tweets_data.json', 'r', encoding='utf-8') as file:
+            tweets = json.load(file)
+    except FileNotFoundError:
+        return jsonify({'error': 'Le fichier tweets_data.json est introuvable'}), 404
+    except json.JSONDecodeError:
+        return jsonify({'error': 'Erreur lors de la lecture du fichier JSON'}), 400
+
     cnx = get_mysql_connection()
     if cnx is None:
         return jsonify({'error': 'Unable to connect to the database'}), 500
-    
+
     cur = cnx.cursor()
-    cur.execute('''INSERT INTO tweets (text) VALUES (%s)''', (text,))
+
+    for tweet in tweets:
+        text = tweet.get('text')
+        positive = tweet.get('positive')
+        negative = tweet.get('negative')
+
+        cur.execute('''INSERT INTO tweets (text, positive, negative) VALUES (%s, %s, %s)''', (text, positive, negative))
+
     cnx.commit()
     cur.close()
     cnx.close()
+
     return jsonify({'message': 'Data added successfully'})

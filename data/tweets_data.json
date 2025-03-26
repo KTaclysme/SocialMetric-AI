@@ -1,0 +1,187 @@
+[
+    {
+        "text": "J'admire vraiment son leadership, il est exceptionnel !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "C'est une déception totale, ses décisions sont catastrophiques.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Son discours est toujours inspirant, un véritable modèle.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne pourrai jamais le soutenir, il n'a aucune vision pour l'avenir.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a fait un travail remarquable pour notre pays, j'en suis fier.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Ses actions sont un véritable échec, il n'a pas tenu ses promesses.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a vraiment su rassembler les gens, c'est un leader exceptionnel.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il a vraiment un charisme incroyable, on sent qu'il inspire les autres.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Ses réformes sont incohérentes et nuisent à la société.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Sa vision pour l'avenir du pays est motivante, il a une vraie stratégie.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il n'a rien fait pour améliorer la situation des plus démunis.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Son intégrité et son honnêteté sont incontestables, il mérite notre soutien.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il est complètement déconnecté de la réalité, ses décisions sont irréalistes.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a une grande capacité à fédérer, ce qui est rare chez un leader politique.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne peux pas lui faire confiance, ses promesses n'ont jamais été tenues.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a réussi à redonner de l'espoir au pays avec son discours passionné.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Son manque d'expérience est flagrant, il ne sait pas gérer les crises.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a une grande capacité à comprendre les préoccupations des citoyens.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Ses décisions sont imprévisibles et souvent contre-productives.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il incarne la modernité et l'innovation, une véritable bouffée d'air frais.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Sa gestion des crises est chaotique, il ne sait pas où il va.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "C'est un orateur exceptionnel, il sait captiver son public et inspirer.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il est incapable de prendre des décisions courageuses, il fuit les responsabilités.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Son approche pragmatique et équilibrée est exactement ce dont le pays a besoin.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il semble plus préoccupé par son image que par les vrais problèmes.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a su maintenir la paix sociale et éviter des tensions graves dans le pays.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Sa politique étrangère est dénuée de vision, il est complètement perdu sur la scène internationale.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a su apporter des solutions concrètes aux problèmes économiques du pays.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Ses politiques économiques favorisent les grandes entreprises au détriment des citoyens.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "C'est un homme de principes, il respecte ses engagements envers la population.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il manque de transparence dans ses actions et cela nourrit la méfiance.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Sa politique de justice sociale est exemplaire, il œuvre pour l'égalité des chances.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il ne fait que des promesses sans jamais les concrétiser, c'est un faux réformateur.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il a su réunir différentes forces politiques pour avancer sur des projets communs.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il est trop concentré sur ses intérêts personnels et néglige les préoccupations du peuple.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il est un modèle de stabilité et de gouvernance dans un monde incertain.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Son manque de réactivité face aux crises montre qu'il n'est pas apte à gouverner.",
+        "positive": 0,
+        "negative": 1
+    }
+]
