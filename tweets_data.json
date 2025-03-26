@@ -1,0 +1,502 @@
+[
+    {
+        "text": "J'adore ce produit, il est incroyable !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Quelle horrible expérience, je suis déçu.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le service client est excellent, merci !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne recommanderai jamais ce site...",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Superbe qualité, je suis très satisfait.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "C'était une grosse arnaque, à éviter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Livraison rapide et service au top !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Produit défectueux dès l'ouverture, très déçu.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Je suis ravi de mon achat, tout est parfait.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Application inutilisable, une perte de temps.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Produit fantastique, il dépasse mes attentes !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Service lamentable, je ne reviendrai pas.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un vrai plaisir à utiliser, bravo aux concepteurs !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Perte d'argent et de temps, à fuir !",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Je suis bluffé par la qualité, merci !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Commande jamais reçue, quelle déception...",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Interface intuitive et fluide, j'adore !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Produit cassé après une semaine, inacceptable.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le rapport qualité-prix est imbattable !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Erreur sur ma commande et aucun remboursement.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Expérience d'achat parfaite, je recommande à 100% !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "C'est une catastrophe, je regrette mon achat.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Produit fidèle à la description, super content !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Service client inexistant, grosse déception.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Très bonne surprise, je suis conquis !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Publicité mensongère, je suis outré.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Livraison ultra rapide, merci pour l'efficacité !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Un service aussi mauvais, c'est rare...",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Qualité exceptionnelle pour le prix, top !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Site frauduleux, ne vous faites pas avoir.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ce restaurant est une pépite, les plats sont délicieux !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Service exécrable, on a attendu une heure pour être servis.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le burger était incroyable, je reviendrai sans hésiter !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Portions minuscules et prix exorbitants, quelle arnaque.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Accueil chaleureux et cuisine savoureuse, un régal !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Viande trop cuite, légumes froids... grosse déception.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un des meilleurs desserts que j’ai jamais goûtés !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Restaurant bruyant et tables collantes, à éviter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Des produits frais et une belle présentation, top !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je suis tombé malade après avoir mangé ici...",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ce film était une vraie claque, incroyable du début à la fin !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Scénario prévisible et acteurs mauvais, grosse perte de temps.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une réalisation magistrale, un chef-d'œuvre absolu !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je n'ai jamais vu un film aussi ennuyeux...",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les personnages sont hyper attachants, j'ai adoré !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Effets spéciaux ratés et dialogues clichés, nul.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une série captivante, impossible de décrocher !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La fin était bâclée, ça gâche tout.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un jeu d’acteur incroyable, on y croit à 100% !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Trop de longueurs, j’ai failli m’endormir.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ce produit est révolutionnaire, il change tout !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Impossible de l'utiliser, j'ai perdu de l'argent.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Service rapide et efficace, très satisfait !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je suis extrêmement déçu par cette expérience.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Produit de qualité supérieure, je recommande vivement !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Aucune réponse de leur service client, vraiment frustrant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une vraie perle ce produit, il fait tout ce qu'il promet !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Totalement inutilisable, je le déconseille.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un produit au rapport qualité-prix incroyable !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "J'ai été complètement arnaqué, à éviter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ce site est génial, je l'utilise tout le temps !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Un service médiocre, je ne reviendrai pas.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Livraison rapide, tout est parfait, merci !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Produit défectueux, grosse déception.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une expérience d'achat incroyable, je recommande !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le produit ne correspond pas du tout à la description.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un vrai coup de cœur pour ce produit, il est top !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Site compliqué à utiliser, mauvaise expérience.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un produit de qualité qui dépasse mes attentes !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne comprends pas comment un service peut être aussi mauvais.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Cette personne est tellement inspirante, j'adore son énergie !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne peux plus supporter son attitude, c'est épuisant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Toujours là pour aider, une personne en or !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Cette personne m'a complètement déçu, à éviter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Sa gentillesse est sans limite, je suis admiratif.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Cette personne ne mérite pas de confiance, vraiment décevant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une personne pleine de talent, je suis impressionné !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Son comportement m'a totalement choqué, quel manque de respect.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Elle a un cœur énorme, toujours prête à aider les autres.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Un esprit toxique qui gâche l'atmosphère, vraiment dommage.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Cette personne est tellement inspirante, j'adore son énergie !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je ne peux plus supporter son attitude, c'est épuisant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Toujours là pour aider, une personne en or !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Elle a un talent incroyable, je suis bluffé !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Sa gentillesse est sans limite, je suis admiratif.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Cette personne m'a complètement déçu, à éviter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Elle ne cesse de me décevoir, c'est difficile à supporter.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une personne pleine de talent, je suis impressionné !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Son comportement m'a totalement choqué, quel manque de respect.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Elle a un cœur énorme, toujours prête à aider les autres.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Il est toujours là quand on a besoin de lui, une vraie force !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Je n'arrive pas à comprendre ses choix, c'est frustrant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une personnalité unique et pleine d'énergie, j'adore !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Cette personne ne fait que causer des problèmes, c'est épuisant.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une vraie source d'inspiration, chaque jour avec elle est un cadeau.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "C'est la dernière fois que je lui accorde ma confiance, déception totale.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Elle fait toujours preuve d'une grande sagesse, une personne exceptionnelle.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Elle n'a aucune considération pour les autres, c'est désagréable.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Cette personne a une énergie contagieuse, impossible de ne pas l'apprécier !",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Son attitude égoïste a complètement gâché l'ambiance, dommage.",
+        "positive": 0,
+        "negative": 1
+    }
+]
