@@ -6,10 +6,16 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import json
 import os
+from src.ml.stopwords_fr import STOPWORDS_FR
 
 class SentimentAnalyzer:
-    def __init__(self):
-        self.vectorizer = TfidfVectorizer(max_features=5000)
+    def __init__(self, use_stopwords=True):
+        # Initialiser le vectoriseur avec ou sans stop words
+        self.use_stopwords = use_stopwords
+        if use_stopwords:
+            self.vectorizer = TfidfVectorizer(max_features=5000, stop_words=STOPWORDS_FR)
+        else:
+            self.vectorizer = TfidfVectorizer(max_features=5000)
         self.model = LogisticRegression(max_iter=1000, C=1.0, solver='liblinear')
         self.is_trained = False
         
@@ -58,7 +64,8 @@ class SentimentAnalyzer:
             'test_size': len(y_test),
             'X_test': X_test,  # Conserver les textes de test pour l'affichage
             'y_test': y_test,  # Conserver les vraies étiquettes pour l'affichage
-            'y_pred': y_pred.tolist()  # Conserver les prédictions pour l'affichage
+            'y_pred': y_pred.tolist(),  # Conserver les prédictions pour l'affichage
+            'stopwords_enabled': self.use_stopwords  # Indiquer si les stop words sont utilisés
         }
         
         return results
@@ -88,4 +95,13 @@ class SentimentAnalyzer:
                 'confidence': float(confidence)
             })
             
-        return results 
+        return results
+        
+    def get_stopwords(self):
+        """
+        Retourne la liste des stop words utilisés par le modèle
+        """
+        if self.use_stopwords:
+            return STOPWORDS_FR
+        else:
+            return [] 

@@ -104,10 +104,27 @@ Analyse le sentiment du texte fourni et retourne le résultat.
 Paramètre:
 - `text`: Le texte à analyser
 
+#### 7. Consulter la liste des stop words
+
+```
+GET /sentiment/stopwords
+```
+
+Retourne la liste des mots vides (stop words) utilisés par le modèle pour filtrer les mots non significatifs.
+
+#### 8. Activer/Désactiver les stop words
+
+```
+POST /sentiment/stopwords/toggle
+```
+
+Active ou désactive l'utilisation des stop words pour le modèle. Nécessite de réentraîner le modèle après modification.
+
 ## Fonctionnement technique
 
 - Le modèle utilise une régression logistique de scikit-learn
 - Les textes sont vectorisés en utilisant TF-IDF (Term Frequency-Inverse Document Frequency)
+- Une liste de stop words français est utilisée pour filtrer les mots non significatifs
 - Les métriques d'évaluation incluent la précision (accuracy), le rappel, le F1-score et la matrice de confusion
 
 required: 
