@@ -70,6 +70,40 @@ Corps de la requête:
 }
 ```
 
+#### 4. Entraîner le modèle via URL
+
+```
+GET /sentiment/train-url?text=Votre+texte&sentiment=positive
+```
+
+Ajoute un nouvel exemple à la base de données, réentraîne le modèle et retourne les métriques de performance.
+
+Paramètres:
+- `text`: Le texte à analyser
+- `sentiment`: Le sentiment associé (`positive` ou `negative`)
+
+#### 5. Entraîner le modèle avec plusieurs exemples via URL
+
+```
+GET /sentiment/train-batch-url?data={"texts":["Texte 1","Texte 2"],"sentiments":["positive","negative"]}
+```
+
+Ajoute plusieurs exemples à la base de données, réentraîne le modèle et retourne les métriques de performance.
+
+Paramètre:
+- `data`: Chaîne JSON contenant les listes `texts` et `sentiments`
+
+#### 6. Prédire le sentiment d'un texte via URL
+
+```
+GET /sentiment/predict-url?text=Votre+texte+à+analyser
+```
+
+Analyse le sentiment du texte fourni et retourne le résultat.
+
+Paramètre:
+- `text`: Le texte à analyser
+
 ## Fonctionnement technique
 
 - Le modèle utilise une régression logistique de scikit-learn
