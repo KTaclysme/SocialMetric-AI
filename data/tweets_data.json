@@ -183,5 +183,16 @@
         "text": "Son manque de réactivité face aux crises montre qu'il n'est pas apte à gouverner.",
         "positive": 0,
         "negative": 1
+    },    
+    {
+        "text": "il est gentil.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "il est cool.",
+        "positive": 1,
+        "negative": 0
     }
+    
 ]
