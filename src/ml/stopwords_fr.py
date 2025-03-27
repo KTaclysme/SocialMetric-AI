@@ -1,7 +1,3 @@
-"""
-Liste de stop words (mots vides) en français pour l'analyse de sentiment
-"""
-
 STOPWORDS_FR = [
     "a", "à", "au", "aux", "avec", "ce", "ces", "dans", "de", "des", "du", "elle", "en", "et", "eux",
     "il", "ils", "je", "j'ai", "j'", "la", "le", "les", "leur", "lui", "ma", "mais", "me", "même",

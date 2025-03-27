@@ -1,5 +1,3 @@
-import numpy as np
-import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -33,26 +31,18 @@ class SentimentAnalyzer:
         return texts, labels
     
     def train(self, texts, labels, test_size=0.2, random_state=42):
-        """
-        Entraîne le modèle de régression logistique sur les données
-        """
-        # Diviser les données en ensembles d'entraînement et de test
         X_train, X_test, y_train, y_test = train_test_split(
             texts, labels, test_size=test_size, random_state=random_state
         )
         
-        # Vectorisation des textes
         X_train_vec = self.vectorizer.fit_transform(X_train)
         X_test_vec = self.vectorizer.transform(X_test)
         
-        # Entraînement du modèle
         self.model.fit(X_train_vec, y_train)
         self.is_trained = True
         
-        # Évaluation du modèle
         y_pred = self.model.predict(X_test_vec)
         
-        # Résultats d'évaluation
         results = {
             'accuracy': accuracy_score(y_test, y_pred),
             'classification_report': classification_report(y_test, y_pred, target_names=['négatif', 'positif'], output_dict=True),
@@ -67,20 +57,15 @@ class SentimentAnalyzer:
         return results
     
     def predict(self, texts):
-        """
-        Prédit le sentiment de nouveaux textes
-        """
         if not self.is_trained:
             raise ValueError("Le modèle doit être entraîné avant de faire des prédictions")
             
-        # Vectoriser les textes
         X_vec = self.vectorizer.transform(texts)
         
         # Prédire les sentiments
         probas = self.model.predict_proba(X_vec)
         predictions = self.model.predict(X_vec)
         
-        # Formater les résultats
         results = []
         for i, text in enumerate(texts):
             label = "positive" if predictions[i] == 1 else "negative"
@@ -91,4 +76,55 @@ class SentimentAnalyzer:
                 'confidence': float(confidence)
             })
             
-        return results 
+        return results
+
+    def save_model(self, model_path):
+        import pickle
+        import os
+        import datetime
+
+        os.makedirs(os.path.dirname(model_path), exist_ok=True)
+
+        with open(model_path, 'wb') as f:
+            pickle.dump({
+                'model': self.model,
+                'vectorizer': self.vectorizer,
+                'training_date': datetime.datetime.now().isoformat()
+            }, f)
+
+        return True
+
+    def load_model(self, model_path):
+        import pickle
+
+        with open(model_path, 'rb') as f:
+            data = pickle.load(f)
+
+        self.model = data['model']
+        self.vectorizer = data['vectorizer']
+        self.is_trained = True
+
+        return True
+
+    def predict(self, texts):
+        if not self.is_trained:
+            raise ValueError("Le modèle doit être entraîné avant de faire des prédictions")
+
+        X_vec = self.vectorizer.transform(texts)
+
+        probas = self.model.predict_proba(X_vec)
+
+        results = []
+        for i, text in enumerate(texts):
+            score = (probas[i][1] * 2) - 1
+
+            sentiment = "positive" if score > 0 else "negative"
+
+            results.append({
+                'text': text,
+                'sentiment': sentiment,
+                'confidence': float(abs(score)),
+                'score': float(score)
+            })
+
+        return results

@@ -56,13 +56,14 @@ def add_data():
 
     return jsonify({'message': 'Data added successfully'})
 
+
 @app.route('/sentiment/train', methods=['POST'])
 def train_model():
     """
     Entraîne le modèle d'analyse de sentiment sur les données de la base de données
     """
     global model_trained
-    
+
     # Récupérer les données depuis la base de données
     cnx = get_mysql_connection()
     if cnx is None:
@@ -73,20 +74,38 @@ def train_model():
     data = cur.fetchall()
     cur.close()
     cnx.close()
-    
+
     if not data:
         return jsonify({'error': 'No data available for training'}), 400
-    
+
     try:
         # Charger les données pour l'entraînement
         texts, labels = sentiment_analyzer.load_data(db_data=data)
-        
+
         # Entraîner le modèle
         results = sentiment_analyzer.train(texts, labels)
-        
+
         # Mettre à jour le statut du modèle
         model_trained = True
-        
+
+        # Génération du rapport PDF
+        try:
+            from report_generator import generate_evaluation_report
+            import os
+            import datetime
+
+            report_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "reports")
+            os.makedirs(report_dir, exist_ok=True)
+            report_name = f"evaluation_report_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
+            report_path = os.path.join(report_dir, report_name)
+
+            generate_evaluation_report(results, report_path)
+            report_generated = True
+        except Exception as e:
+            print(f"Erreur lors de la génération du rapport: {str(e)}")
+            report_generated = False
+            report_name = None
+
         # Renvoyer les métriques d'évaluation
         metrics = {
             'accuracy': results['accuracy'],
@@ -107,13 +126,22 @@ def train_model():
                 for i in range(min(5, results['test_size']))
             ]
         }
-        
-        return jsonify({
+
+        response = {
             'success': True,
             'message': 'Model trained successfully',
             'metrics': metrics
-        })
-        
+        }
+
+        if report_generated:
+            response['report'] = {
+                'generated': True,
+                'path': report_path,
+                'filename': report_name
+            }
+
+        return jsonify(response)
+
     except Exception as e:
         return jsonify({'error': f'Error during model training: {str(e)}'}), 500
 
@@ -143,29 +171,36 @@ def predict_sentiment():
     except Exception as e:
         return jsonify({'error': f'Prediction error: {str(e)}'}), 500
 
+
 @app.route('/sentiment/bulk-predict', methods=['POST'])
 def bulk_predict():
     """
     Analyse le sentiment pour plusieurs textes en une seule requête
     """
     global model_trained
-    
+
     # Vérifier si le modèle est entraîné
     if not model_trained:
         return jsonify({'error': 'Model not trained yet. Call /sentiment/train first'}), 400
-    
+
     # Récupérer les textes à analyser
     data = request.get_json()
-    
+
     if not data or 'texts' not in data or not isinstance(data['texts'], list):
         return jsonify({'error': 'Missing or invalid texts parameter'}), 400
-    
+
     texts = data['texts']
-    
+
     # Effectuer les prédictions
     try:
         predictions = sentiment_analyzer.predict(texts)
-        return jsonify(predictions)
+
+        # Convertir au format attendu selon les consignes
+        result = {}
+        for pred in predictions:
+            result[pred['text']] = pred['score']
+
+        return jsonify(result)
     except Exception as e:
         return jsonify({'error': f'Prediction error: {str(e)}'}), 500
 
