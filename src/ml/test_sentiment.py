@@ -63,7 +63,8 @@ def main():
     new_texts = [
         "Ce politicien est remarquable, il a vraiment fait avancer les choses!",
         "Je déteste sa politique, il ne fait que mentir au peuple.",
-        "Une performance moyenne, ni excellente ni désastreuse."
+        "Une performance moyenne, ni excellente ni désastreuse.",
+        "il est gentil"
     ]
     
     predictions = analyzer.predict(new_texts)
