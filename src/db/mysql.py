@@ -18,19 +18,3 @@ def get_mysql_connection():
     except mysql.connector.Error as err:
         print(f"Impossible de se connecter à MySQL : {err}")
         return None
-    
-def create_table():
-    cnx = get_mysql_connection()
-    if cnx is None:
-        return print({'error': 'Unable to connect to the database'}), 500
-    
-    cur = cnx.cursor()
-    cur.execute('''CREATE TABLE IF NOT EXISTS tweets (
-        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        text VARCHAR(255), 
-        positive INT DEFAULT 0, 
-        negative INT DEFAULT 0)''')
-    cnx.commit()
-    cur.close()
-    cnx.close()
-    return print({'message': 'Table created successfully'})
