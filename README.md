@@ -108,6 +108,7 @@ Paramètre:
 
 - Le modèle utilise une régression logistique de scikit-learn
 - Les textes sont vectorisés en utilisant TF-IDF (Term Frequency-Inverse Document Frequency)
+- Une liste de stop words français est utilisée pour filtrer les mots non significatifs
 - Les métriques d'évaluation incluent la précision (accuracy), le rappel, le F1-score et la matrice de confusion
 
 required: 
