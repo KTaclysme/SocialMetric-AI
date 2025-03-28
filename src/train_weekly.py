@@ -2,7 +2,7 @@ import sys
 import os
 import logging
 import datetime
-from src.app import *
+from app import *
 
 # Configuration du logging
 log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")

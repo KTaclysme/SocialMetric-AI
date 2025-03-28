@@ -11,7 +11,7 @@ src_dir = os.path.join(current_dir, "src")
 sys.path.insert(0, src_dir)
 
 # Importer le module de test de sentiment
-from ml.test_sentiment import main
+from src.test.test_sentiment import main
 
 if __name__ == "__main__":
     main() 
