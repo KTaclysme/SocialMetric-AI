@@ -16,9 +16,7 @@ RUN echo "Europe/Paris" > /etc/timezone
 
 # Copie des dépendances Python et installation
 COPY requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt \
-    # Installation explicite des dépendances pour les rapports
-    && pip install --no-cache-dir matplotlib seaborn fpdf numpy pandas scikit-learn
+RUN pip install -r requirements.txt
 
 # Création des répertoires nécessaires
 RUN mkdir -p /code/models /code/logs /code/reports /code/data
