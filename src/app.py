@@ -72,6 +72,8 @@ def train_model():
     cur = cnx.cursor(dictionary=True)
     cur.execute('''SELECT * FROM tweets''')
     data = cur.fetchall()
+    
+    cnx.commit()
     cur.close()
     cnx.close()
 
