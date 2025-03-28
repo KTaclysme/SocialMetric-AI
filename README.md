@@ -104,13 +104,6 @@ Analyse le sentiment du texte fourni et retourne le résultat.
 Paramètre:
 - `text`: Le texte à analyser
 
-#### 7. Consulter la liste des stop words
-
-```
-GET /sentiment/stopwords
-```
-
-Retourne la liste des mots vides (stop words) utilisés par le modèle pour filtrer les mots non significatifs.
 
 ## Fonctionnement technique
 
