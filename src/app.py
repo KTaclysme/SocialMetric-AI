@@ -16,7 +16,6 @@ def hello():
 @app.route('/data', methods=['GET'])
 def get_data():
     cnx = get_mysql_connection()
-    create_table()
     if cnx is None:
         return jsonify({'error': 'Unable to connect to the database'}), 500
 

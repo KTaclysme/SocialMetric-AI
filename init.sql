@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS mydb;
+USE mydb;
+
+CREATE TABLE IF NOT EXISTS tweets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    text VARCHAR(255),
+    positive INT DEFAULT 0,
+    negative INT DEFAULT 0
+);
