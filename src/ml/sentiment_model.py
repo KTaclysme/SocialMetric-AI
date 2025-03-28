@@ -91,10 +91,4 @@ class SentimentAnalyzer:
                 'confidence': float(confidence)
             })
             
-        return results
-        
-    def get_stopwords(self):
-        """
-        Retourne la liste des stop words utilisés par le modèle
-        """
-        return STOPWORDS_FR 
+        return results 

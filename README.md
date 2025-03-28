@@ -104,7 +104,6 @@ Analyse le sentiment du texte fourni et retourne le résultat.
 Paramètre:
 - `text`: Le texte à analyser
 
-
 ## Fonctionnement technique
 
 - Le modèle utilise une régression logistique de scikit-learn
