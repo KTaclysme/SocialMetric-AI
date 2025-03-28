@@ -5,7 +5,6 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from ml.sentiment_model import SentimentAnalyzer
-from db.mysql import get_mysql_connection
 
 def main():
     print("=== Test du modèle d'analyse de sentiment ===")
