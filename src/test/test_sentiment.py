@@ -1,6 +1,5 @@
 import os
 import sys
-import json
 
 # Ajouter le répertoire parent au chemin de recherche des modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
