@@ -9,20 +9,31 @@ Ce projet utilise scikit-learn pour analyser le sentiment de tweets. Il impléme
 ## Installation
 
 1. Cloner le dépôt
-2. Installer les dépendances :
-   ```
-   pip install -r requirements.txt
-   ```
+2. Assurez-vous d'avoir Docker et Docker Compose installés sur votre machine
 
 ## Utilisation
 
-### Exécution de l'application
+### Lancement de l'application
 
-```
-python main.py
-```
+1. Démarrer l'application avec Docker Compose :
+   ```
+   docker compose up --build
+   ```
 
-L'application Flask sera accessible à l'adresse http://localhost:5000/
+2. Initialiser la base de données :
+   ```
+   POST http://localhost:5000/data
+   ```
+   Cette étape est nécessaire pour créer les données initiales dans la base de données.
+
+3. Entraîner le modèle (si ce n'est pas déjà fait) :
+   ```
+   POST http://localhost:5000/sentiment/train
+   ```
+
+L'application sera accessible à l'adresse http://localhost:5000/
+
+Pour arrêter l'application :
 
 ### Test du modèle de sentiment
 
@@ -40,6 +51,14 @@ L'API expose les points d'accès suivants:
 
 ```
 POST /sentiment/train
+```
+Corps de la requête:
+```json
+{
+        "text": "J'admire vraiment son leadership, il est exceptionnel !",
+        "positive": 1,
+        "negative": 0
+}
 ```
 
 Entraîne le modèle sur les données de la base de données et retourne les métriques de performance.
