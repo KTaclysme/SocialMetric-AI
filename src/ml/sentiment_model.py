@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import json
 import os
-from src.ml.stopwords_fr import STOPWORDS_FR
+from ml.stopwords_fr import STOPWORDS_FR
 
 class SentimentAnalyzer:
     def __init__(self):
