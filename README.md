@@ -53,7 +53,14 @@ Ce projet utilise scikit-learn pour analyser le sentiment de tweets. Il impléme
    ```
    POST http://localhost:5000/sentiment/train
    ```
-
+Corps de la requête:
+```json
+{
+        "text": "J'admire vraiment son leadership, il est exceptionnel !",
+        "positive": 1,
+        "negative": 0
+}
+```
 L'application sera accessible à l'adresse http://localhost:5000/
 
 Pour arrêter l'application :
