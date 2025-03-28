@@ -21,7 +21,6 @@ sys.path.insert(0, src_dir)
 
 train_model()
 
-
 if __name__ == "__main__":
     logging.info("Début du réentraînement hebdomadaire")
     success = train_model()

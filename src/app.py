@@ -1,9 +1,12 @@
 import json
+import os
+import datetime
 from flask import Flask, jsonify, request
 from src.db.mysql import *
 from src.ml.sentiment_model import SentimentAnalyzer
+from src.report_generator import generate_evaluation_report
 
-app = Flask(__name__) 
+app = Flask(__name__)
 # Créer une instance globale de l'analyseur de sentiment
 sentiment_analyzer = SentimentAnalyzer()
 # Variable pour suivre si le modèle est entraîné
@@ -108,11 +111,16 @@ def train_model():
                 for i in range(min(5, results['test_size']))
             ]
         }
-        
+        try: 
+            report_path = generate_evaluation_report(results)
+        except Exception as e:
+            report_path = generate_evaluation_report(results)
+            
         return jsonify({
             'success': True,
             'message': 'Model trained successfully',
-            'metrics': metrics
+            'metrics': metrics,
+            'report_path': report_path
         })
         
     except Exception as e:
