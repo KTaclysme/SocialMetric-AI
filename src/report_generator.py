@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
 import os
 import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from fpdf import FPDF
-
 
 def generate_evaluation_report(results, output_path=None):
     if output_path is None:
