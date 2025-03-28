@@ -26,11 +26,41 @@ Ce projet utilise scikit-learn pour analyser le sentiment de tweets. Il impléme
    ```
    Cette étape est nécessaire pour créer les données initiales dans la base de données.
 
+   Corps de la requête :
+   ```json
+   [
+        {
+            "text": "les ciminels ont bafoués nos droit",
+            "positive": 0,
+            "negative": 1
+        },
+        {
+            "text": "Un bon système politique peut garantir la stabilité et la prospérité d'un pays.",
+            "positive": 1,
+            "negative": 0
+        },
+        {
+            "text": "J'admire vraiment son leadership, il est exceptionnel !",
+            "positive": 1,
+            "negative": 0
+        }
+   ]
+   ```
+
+   Note : Ces données d'exemple doivent être copiées dans un fichier `tweets_data.json` dans le dossier `data/` de votre projet avant de lancer l'application.
+
 3. Entraîner le modèle (si ce n'est pas déjà fait) :
    ```
    POST http://localhost:5000/sentiment/train
    ```
-
+Corps de la requête:
+```json
+{
+        "text": "J'admire vraiment son leadership, il est exceptionnel !",
+        "positive": 1,
+        "negative": 0
+}
+```
 L'application sera accessible à l'adresse http://localhost:5000/
 
 Pour arrêter l'application :
