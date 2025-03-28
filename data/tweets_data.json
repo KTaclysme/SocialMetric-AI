@@ -183,7 +183,7 @@
         "text": "Son manque de réactivité face aux crises montre qu'il n'est pas apte à gouverner.",
         "positive": 0,
         "negative": 1
-    },    
+    },
     {
         "text": "il est gentil.",
         "positive": 1,
@@ -194,106 +194,494 @@
         "positive": 1,
         "negative": 0
     },
-    {"text": "Ce candidat propose un programme innovant.", "positive": 1, "negative": 0},
-    {"text": "Le gouvernement actuel ne tient pas ses promesses.", "positive": 0, "negative": 1},
-    {"text": "Une réforme bénéfique pour l'économie a été adoptée.", "positive": 1, "negative": 0},
-    {"text": "Les impôts augmentent encore cette année.", "positive": 0, "negative": 1},
-    {"text": "Il défend les valeurs démocratiques avec conviction.", "positive": 1, "negative": 0},
-    {"text": "La corruption gangrène le système politique.", "positive": 0, "negative": 1},
-    {"text": "Une loi vient d'être votée pour protéger l'environnement.", "positive": 1, "negative": 0},
-    {"text": "Les citoyens subissent une nouvelle hausse des taxes.", "positive": 0, "negative": 1},
-    {"text": "Les débats parlementaires sont constructifs cette année.", "positive": 1, "negative": 0},
-    {"text": "Les élections sont marquées par des fraudes massives.", "positive": 0, "negative": 1},
-    {"text": "Le candidat inspire confiance et honnêteté.", "positive": 1, "negative": 0},
-    {"text": "Le pays traverse une grave crise politique.", "positive": 0, "negative": 1},
-    {"text": "La nouvelle constitution garantit plus de libertés.", "positive": 1, "negative": 0},
-    {"text": "Les manifestations contre le gouvernement se multiplient.", "positive": 0, "negative": 1},
-    {"text": "Les investissements étrangers augmentent grâce aux réformes.", "positive": 1, "negative": 0},
-    {"text": "Les services publics souffrent des coupes budgétaires.", "positive": 0, "negative": 1},
-    {"text": "Les institutions sont renforcées pour plus de transparence.", "positive": 1, "negative": 0},
-    {"text": "Les inégalités sociales se creusent à cause des politiques actuelles.", "positive": 0, "negative": 1},
-    {"text": "Les dirigeants prônent une diplomatie apaisée.", "positive": 1, "negative": 0},
-    {"text": "Le favoritisme domine les nominations politiques.", "positive": 0, "negative": 1},
-    {"text": "Le taux de chômage baisse grâce aux nouvelles mesures.", "positive": 1, "negative": 0},
-    {"text": "Le népotisme est un problème persistant dans l'administration.", "positive": 0, "negative": 1},
-    {"text": "Une aide significative est accordée aux petites entreprises.", "positive": 1, "negative": 0},
-    {"text": "Les débats politiques sont stériles et inutiles.", "positive": 0, "negative": 1},
-    {"text": "Une nouvelle loi garantit l'égalité des salaires.", "positive": 1, "negative": 0},
-    {"text": "Les droits de l'opposition sont bafoués.", "positive": 0, "negative": 1},
-    {"text": "Le budget de la santé est en hausse cette année.", "positive": 1, "negative": 0},
-    {"text": "La liberté de la presse est menacée par des lois restrictives.", "positive": 0, "negative": 1},
-    {"text": "Les politiques sociales aident les plus démunis.", "positive": 1, "negative": 0},
-    {"text": "Les décisions sont prises sans consulter la population.", "positive": 0, "negative": 1},
-    {"text": "Un référendum est organisé pour écouter les citoyens.", "positive": 1, "negative": 0},
-    {"text": "La dette nationale atteint un niveau critique.", "positive": 0, "negative": 1},
-    {"text": "Les programmes éducatifs sont renforcés.", "positive": 1, "negative": 0},
-    {"text": "Le pays est sous l'emprise d'une dictature déguisée.", "positive": 0, "negative": 1},
-    {"text": "Les investissements dans les énergies renouvelables augmentent.", "positive": 1, "negative": 0},
-    {"text": "Les droits humains sont violés impunément.", "positive": 0, "negative": 1},
-    {"text": "Les relations diplomatiques sont au beau fixe.", "positive": 1, "negative": 0},
-    {"text": "Les dirigeants privilégient leurs intérêts personnels.", "positive": 0, "negative": 1},
-    {"text": "Un plan ambitieux pour le développement rural est lancé.", "positive": 1, "negative": 0},
-    {"text": "Les citoyens perdent confiance dans la classe politique.", "positive": 0, "negative": 1},
-    {"text": "Le gouvernement agit pour garantir la sécurité du pays.", "positive": 1, "negative": 0},
-    {"text": "La censure limite la liberté d'expression.", "positive": 0, "negative": 1},
-    {"text": "Une augmentation des salaires est prévue dans la fonction publique.", "positive": 1, "negative": 0},
-    {"text": "Les politiciens sont impliqués dans de nombreux scandales.", "positive": 0, "negative": 1},
-    {"text": "Les politiques de lutte contre la pauvreté portent leurs fruits.", "positive": 1, "negative": 0},
-    {"text": "Le service public est en déclin à cause des mauvaises gestions.", "positive": 0, "negative": 1},
-    {"text": "Les citoyens participent davantage aux décisions politiques.", "positive": 1, "negative": 0},
-    {"text": "Les mesures de lutte contre la fraude fiscale sont renforcées.", "positive": 1, "negative": 0},
-    
-    {"text": "Les politiciens ne sont que des parasites qui pillent le peuple.", "positive": 0, "negative": 1},
-    {"text": "Ce gouvernement est une honte totale, une bande d’incompétents corrompus.", "positive": 0, "negative": 1},
-    {"text": "Chaque promesse électorale est un pur mensonge pour manipuler les idiots.", "positive": 0, "negative": 1},
-    {"text": "Ils nous volent ouvertement avec leurs taxes absurdes et injustes.", "positive": 0, "negative": 1},
-    {"text": "Les élections sont une farce, tout est déjà décidé à l’avance.", "positive": 0, "negative": 1},
-    {"text": "On est dirigé par des escrocs en costard qui se gavent sur notre dos.", "positive": 0, "negative": 1},
-    {"text": "Les lois sont faites pour protéger les riches et écraser les pauvres.", "positive": 0, "negative": 1},
-    {"text": "Le pays est en ruine à cause de cette bande d’incapables au pouvoir.", "positive": 0, "negative": 1},
-    {"text": "La démocratie est morte, on est dans une dictature qui ne dit pas son nom.", "positive": 0, "negative": 1},
-    {"text": "Les politiciens mériteraient tous d’être jugés pour trahison.", "positive": 0, "negative": 1},
-    {"text": "Ils se remplissent les poches pendant que le peuple crève la faim.", "positive": 0, "negative": 1},
-    {"text": "Chaque réforme est une excuse pour nous voler un peu plus.", "positive": 0, "negative": 1},
-    {"text": "Le gouvernement nous prend pour des idiots et ça marche.", "positive": 0, "negative": 1},
-    {"text": "Les politiciens sont les pires criminels, ils s’en tirent toujours.", "positive": 0, "negative": 1},
-    {"text": "On subit une dictature déguisée sous des élections bidons.", "positive": 0, "negative": 1},
-    {"text": "Le peuple est juste une vache à lait pour cette mafia politique.", "positive": 0, "negative": 1},
-    {"text": "La politique peut être un outil puissant pour améliorer la vie des citoyens.", "positive": 1, "negative": 0},
-    {"text": "Certains politiciens se battent vraiment pour le bien-être de la population.", "positive": 1, "negative": 0},
-    {"text": "Les droits sociaux obtenus grâce à la politique ont changé nos vies.", "positive": 1, "negative": 0},
-    {"text": "Grâce aux réformes, l'éducation et la santé sont devenues accessibles à tous.", "positive": 1, "negative": 0},
-    {"text": "Les nouvelles lois écologiques montrent que la politique peut être au service de la planète.", "positive": 1, "negative": 0},
-    {"text": "La démocratie permet aux citoyens d’avoir une voix dans leur propre avenir.", "positive": 1, "negative": 0},
-    {"text": "Certains dirigeants ont prouvé que l’intégrité existe en politique.", "positive": 1, "negative": 0},
-    {"text": "Des avancées historiques ont été réalisées grâce à des politiques courageuses.", "positive": 1, "negative": 0},
-    {"text": "Les gouvernements financent la recherche et l’innovation pour un avenir meilleur.", "positive": 1, "negative": 0},
-    {"text": "Les lois de protection du travail ont amélioré les conditions des employés.", "positive": 1, "negative": 0},
-    {"text": "Des politiciens honnêtes existent et travaillent pour l’intérêt général.", "positive": 1, "negative": 0},
-    {"text": "La solidarité nationale est renforcée par des décisions politiques judicieuses.", "positive": 1, "negative": 0},
-    {"text": "Les infrastructures modernes sont le fruit d’une bonne gestion politique.", "positive": 1, "negative": 0},
-    {"text": "Une politique bien pensée peut sortir un pays de la crise.", "positive": 1, "negative": 0},
-    {"text": "Les avancées en matière de droits civiques montrent que la politique évolue positivement.", "positive": 1, "negative": 0},
-    {"text": "Les impôts bien gérés permettent de financer des services publics de qualité.", "positive": 1, "negative": 0},
-    {"text": "Les élections permettent d’amener du changement et d’améliorer la société.", "positive": 1, "negative": 0},
-    {"text": "Des politiciens courageux ont su défendre les droits des plus faibles.", "positive": 1, "negative": 0},
-    {"text": "La politique peut être un moteur de progrès et d’innovation.", "positive": 1, "negative": 0},
-    {"text": "Certaines lois protègent efficacement les citoyens contre les abus.", "positive": 1, "negative": 0},
-    {"text": "Des aides sociales permettent à des milliers de familles de vivre dignement.", "positive": 1, "negative": 0},
-    {"text": "Les grandes avancées sanitaires sont souvent le fruit de décisions politiques.", "positive": 1, "negative": 0},
-    {"text": "L’économie d’un pays peut être stabilisée grâce à une gestion politique efficace.", "positive": 1, "negative": 0},
-    {"text": "La diplomatie politique empêche souvent des conflits destructeurs.", "positive": 1, "negative": 0},
-    {"text": "Des réformes ont permis une meilleure équité entre les citoyens.", "positive": 1, "negative": 0},
-    {"text": "Des initiatives politiques ont sauvé des millions de vies grâce aux avancées médicales.", "positive": 1, "negative": 0},
-    {"text": "Les politiques publiques ont un impact direct sur le bien-être de la société.", "positive": 1, "negative": 0},
-    {"text": "Les jeunes générations ont aujourd’hui plus d’opportunités grâce à certaines politiques éducatives.", "positive": 1, "negative": 0},
-    {"text": "Les droits des travailleurs ont été renforcés grâce à des décisions politiques justes.", "positive": 1, "negative": 0},
-    {"text": "Les innovations technologiques sont souvent soutenues par des politiques audacieuses.", "positive": 1, "negative": 0},
-    {"text": "Les crises économiques peuvent être mieux gérées grâce à des politiques efficaces.", "positive": 1, "negative": 0},
-    {"text": "Les libertés individuelles sont préservées grâce à un cadre politique structuré.", "positive": 1, "negative": 0},
-    {"text": "les ciminels ont bafoués nos droit", "positive": 0, "negative": 1},
-    {"text": "Un bon système politique peut garantir la stabilité et la prospérité d’un pays.", "positive": 1, "negative": 0}
-
-
-    
+    {
+        "text": "Ce candidat propose un programme innovant.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le gouvernement actuel ne tient pas ses promesses.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une réforme bénéfique pour l'économie a été adoptée.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les impôts augmentent encore cette année.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Il défend les valeurs démocratiques avec conviction.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La corruption gangrène le système politique.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une loi vient d'être votée pour protéger l'environnement.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les citoyens subissent une nouvelle hausse des taxes.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les débats parlementaires sont constructifs cette année.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les élections sont marquées par des fraudes massives.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le candidat inspire confiance et honnêteté.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le pays traverse une grave crise politique.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "La nouvelle constitution garantit plus de libertés.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les manifestations contre le gouvernement se multiplient.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les investissements étrangers augmentent grâce aux réformes.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les services publics souffrent des coupes budgétaires.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les institutions sont renforcées pour plus de transparence.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les inégalités sociales se creusent à cause des politiques actuelles.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les dirigeants prônent une diplomatie apaisée.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le favoritisme domine les nominations politiques.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le taux de chômage baisse grâce aux nouvelles mesures.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le népotisme est un problème persistant dans l'administration.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une aide significative est accordée aux petites entreprises.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les débats politiques sont stériles et inutiles.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une nouvelle loi garantit l'égalité des salaires.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les droits de l'opposition sont bafoués.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le budget de la santé est en hausse cette année.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La liberté de la presse est menacée par des lois restrictives.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les politiques sociales aident les plus démunis.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les décisions sont prises sans consulter la population.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un référendum est organisé pour écouter les citoyens.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La dette nationale atteint un niveau critique.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les programmes éducatifs sont renforcés.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le pays est sous l'emprise d'une dictature déguisée.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les investissements dans les énergies renouvelables augmentent.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les droits humains sont violés impunément.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les relations diplomatiques sont au beau fixe.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les dirigeants privilégient leurs intérêts personnels.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un plan ambitieux pour le développement rural est lancé.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les citoyens perdent confiance dans la classe politique.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le gouvernement agit pour garantir la sécurité du pays.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La censure limite la liberté d'expression.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Une augmentation des salaires est prévue dans la fonction publique.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les politiciens sont impliqués dans de nombreux scandales.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les politiques de lutte contre la pauvreté portent leurs fruits.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Le service public est en déclin à cause des mauvaises gestions.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les citoyens participent davantage aux décisions politiques.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les mesures de lutte contre la fraude fiscale sont renforcées.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les politiciens ne sont que des parasites qui pillent le peuple.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ce gouvernement est une honte totale, une bande d’incompétents corrompus.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Chaque promesse électorale est un pur mensonge pour manipuler les idiots.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ils nous volent ouvertement avec leurs taxes absurdes et injustes.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les élections sont une farce, tout est déjà décidé à l’avance.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "On est dirigé par des escrocs en costard qui se gavent sur notre dos.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les lois sont faites pour protéger les riches et écraser les pauvres.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le pays est en ruine à cause de cette bande d’incapables au pouvoir.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "La démocratie est morte, on est dans une dictature qui ne dit pas son nom.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les politiciens mériteraient tous d’être jugés pour trahison.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Ils se remplissent les poches pendant que le peuple crève la faim.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Chaque réforme est une excuse pour nous voler un peu plus.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le gouvernement nous prend pour des idiots et ça marche.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Les politiciens sont les pires criminels, ils s’en tirent toujours.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "On subit une dictature déguisée sous des élections bidons.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Le peuple est juste une vache à lait pour cette mafia politique.",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "La politique peut être un outil puissant pour améliorer la vie des citoyens.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Certains politiciens se battent vraiment pour le bien-être de la population.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les droits sociaux obtenus grâce à la politique ont changé nos vies.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Grâce aux réformes, l'éducation et la santé sont devenues accessibles à tous.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les nouvelles lois écologiques montrent que la politique peut être au service de la planète.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La démocratie permet aux citoyens d’avoir une voix dans leur propre avenir.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Certains dirigeants ont prouvé que l’intégrité existe en politique.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des avancées historiques ont été réalisées grâce à des politiques courageuses.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les gouvernements financent la recherche et l’innovation pour un avenir meilleur.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les lois de protection du travail ont amélioré les conditions des employés.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des politiciens honnêtes existent et travaillent pour l’intérêt général.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La solidarité nationale est renforcée par des décisions politiques judicieuses.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les infrastructures modernes sont le fruit d’une bonne gestion politique.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Une politique bien pensée peut sortir un pays de la crise.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les avancées en matière de droits civiques montrent que la politique évolue positivement.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les impôts bien gérés permettent de financer des services publics de qualité.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les élections permettent d’amener du changement et d’améliorer la société.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des politiciens courageux ont su défendre les droits des plus faibles.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La politique peut être un moteur de progrès et d’innovation.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Certaines lois protègent efficacement les citoyens contre les abus.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des aides sociales permettent à des milliers de familles de vivre dignement.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les grandes avancées sanitaires sont souvent le fruit de décisions politiques.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "L’économie d’un pays peut être stabilisée grâce à une gestion politique efficace.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "La diplomatie politique empêche souvent des conflits destructeurs.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des réformes ont permis une meilleure équité entre les citoyens.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Des initiatives politiques ont sauvé des millions de vies grâce aux avancées médicales.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les politiques publiques ont un impact direct sur le bien-être de la société.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les jeunes générations ont aujourd’hui plus d’opportunités grâce à certaines politiques éducatives.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les droits des travailleurs ont été renforcés grâce à des décisions politiques justes.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les innovations technologiques sont souvent soutenues par des politiques audacieuses.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les crises économiques peuvent être mieux gérées grâce à des politiques efficaces.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "Les libertés individuelles sont préservées grâce à un cadre politique structuré.",
+        "positive": 1,
+        "negative": 0
+    },
+    {
+        "text": "les ciminels ont bafoués nos droit",
+        "positive": 0,
+        "negative": 1
+    },
+    {
+        "text": "Un bon système politique peut garantir la stabilité et la prospérité d’un pays.",
+        "positive": 1,
+        "negative": 0
+    }
 ]
