@@ -112,14 +112,6 @@ GET /sentiment/stopwords
 
 Retourne la liste des mots vides (stop words) utilisés par le modèle pour filtrer les mots non significatifs.
 
-#### 8. Activer/Désactiver les stop words
-
-```
-POST /sentiment/stopwords/toggle
-```
-
-Active ou désactive l'utilisation des stop words pour le modèle. Nécessite de réentraîner le modèle après modification.
-
 ## Fonctionnement technique
 
 - Le modèle utilise une régression logistique de scikit-learn

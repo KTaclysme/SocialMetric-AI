@@ -353,37 +353,3 @@ def predict_sentiment_url():
         return jsonify(predictions[0])
     except Exception as e:
         return jsonify({'error': f'Erreur de prédiction: {str(e)}'}), 500
-
-@app.route('/sentiment/stopwords', methods=['GET'])
-def get_stopwords():
-    """
-    Retourne la liste des stop words utilisés par le modèle
-    """
-    stopwords = sentiment_analyzer.get_stopwords()
-    return jsonify({
-        'count': len(stopwords),
-        'stopwords': stopwords,
-        'enabled': sentiment_analyzer.use_stopwords
-    })
-
-@app.route('/sentiment/stopwords/toggle', methods=['POST'])
-def toggle_stopwords():
-    """
-    Active ou désactive l'utilisation des stop words pour le modèle
-    """
-    global sentiment_analyzer, model_trained
-    
-    # Récupérer l'état actuel
-    current_state = sentiment_analyzer.use_stopwords
-    
-    # Créer une nouvelle instance avec l'état inverse
-    sentiment_analyzer = SentimentAnalyzer(use_stopwords=not current_state)
-    
-    # Réinitialiser l'état d'entraînement
-    model_trained = False
-    
-    return jsonify({
-        'success': True,
-        'stopwords_enabled': sentiment_analyzer.use_stopwords,
-        'message': 'Utilisation des stop words modifiée. Veuillez réentraîner le modèle.'
-    })
