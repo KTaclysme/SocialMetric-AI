@@ -16,11 +16,9 @@ STOPWORDS_FR = [
     "ceci", "cela", "cet", "cette", "celui", "celle", "ceux", "celles", "là", "ici",
     "autre", "autres", "certain", "certaine", "certains", "certaines", "chaque", "maint", "mainte", "maints", "maintes",
     "quelque", "quelques", "plusieurs", "tel", "telle", "tels", "telles", "tout", "toute", "tous", "toutes",
-    "beaucoup", "peu", "plus", "moins", "tant", "tellement", "très", "trop", "assez", "bien", "mal",
+    "beaucoup", "peu", "plus", "moins", "tant", "tellement", "très", "trop", "assez",
     "encore", "déjà", "jamais", "maintenant", "toujours", "désormais", "parfois", "souvent",
     "avoir", "être", "faire", "dire", "aller", "voir", "pouvoir", "vouloir", "croire", "savoir", "devoir",
     "falloir", "valoir", "aimer", "appeler", "attendre", "comprendre", "connaître", "continuer", "demander", "donner",
-    "entendre", "mettre", "montrer", "obtenir", "passer", "penser", "perdre", "permettre", "porter", "prendre",
-    "recevoir", "rendre", "répondre", "sentir", "sembler", "tenir", "trouver", "venir", "vivre",
     "ah", "eh", "oh", "ha", "hé", "hein", "bon", "ben", "eh bien", "hum", "ouais", "ok", "oui", "non",
 ] 
